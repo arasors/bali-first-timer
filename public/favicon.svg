@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="tile" x1="7" y1="0" x2="57" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#084961"/>
+      <stop offset="1" stop-color="#052737"/>
+    </linearGradient>
+    <linearGradient id="letter" x1="22" y1="12" x2="42" y2="53" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#72E7E9"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#tile)"/>
+  <path fill-rule="evenodd" d="M17 11H31C41.4 11 47 15.3 47 22.7C47 27.2 44.6 30.6 40.4 32.2C46.2 33.6 49 37.3 49 42.6C49 50.7 42.8 55 31.7 55H17V11ZM27 20V28.7H30.8C35.1 28.7 37.3 27.3 37.3 24.3C37.3 21.3 35.2 20 30.8 20H27ZM27 37.1V46H32.2C36.8 46 39.2 44.5 39.2 41.5C39.2 38.6 36.9 37.1 32.2 37.1H27Z" fill="url(#letter)"/>
+  <path d="M10 50C17 45 25 57 34 51C41 46 48 49 54 47" stroke="#08B9CD" stroke-width="4" stroke-linecap="round"/>
+  <path d="M12 56C22 51 28 60 39 55C45 52 49 53 54 52" stroke="#72E7E9" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M45 9C50 8 55 10 55 10C54 16 50 19 45 18C43 15 43 12 45 9Z" fill="#B8E63D"/>
+</svg>

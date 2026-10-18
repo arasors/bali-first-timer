@@ -9,8 +9,10 @@ export default function manifest(): MetadataRoute.Manifest {
     description: SITE_DESCRIPTION,
     start_url: "/",
     display: "standalone",
-    background_color: "#F4F0E6",
-    theme_color: "#071B24",
+    id: "/",
+    scope: "/",
+    background_color: "#052B40",
+    theme_color: "#052B40",
     lang: "en",
     icons: [
       {
@@ -24,6 +26,12 @@ export default function manifest(): MetadataRoute.Manifest {
         sizes: "512x512",
         type: "image/png",
         purpose: "any",
+      },
+      {
+        src: "/android-chrome-maskable-512x512.png",
+        sizes: "512x512",
+        type: "image/png",
+        purpose: "maskable",
       },
     ],
   };

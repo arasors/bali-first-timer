@@ -20,11 +20,20 @@ export const SITE_DESCRIPTION =
 export const SITE_URL = resolveSiteUrl();
 export const SITE_LOCALE = "en_US";
 export const SITE_LANGUAGE = "en";
-export const SOCIAL_IMAGE =
-  "/sites/balifirsttimer-com-4cbcd837/root-8a5edab2/images/hero-bali.jpg";
+export const SOCIAL_IMAGE = "/seo/og/home.jpg";
 export const LOGO_IMAGE =
   "/sites/balifirsttimer-com-4cbcd837/shared/logo.png";
 
 export function absoluteUrl(path = "/") {
   return new URL(path, `${SITE_URL}/`).toString();
+}
+
+export function socialImage(path = "home", title = "Your first Bali. Made for you.") {
+  return {
+    url: absoluteUrl(`/seo/og/${path.replaceAll("/", "-")}.jpg`),
+    width: 1200,
+    height: 630,
+    type: "image/jpeg",
+    alt: `${SITE_NAME} — ${title}`,
+  };
 }

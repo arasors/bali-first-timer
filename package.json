@@ -20,6 +20,7 @@
     "node": "24.x"
   },
   "scripts": {
+    "brand:assets": "bun scripts/generate-brand-assets.ts",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -47,6 +48,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.3.0",
+    "sharp": "0.35.4",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

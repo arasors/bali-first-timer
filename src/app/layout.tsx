@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 
 import { TrackingScripts } from "@/components/analytics/TrackingScripts";
 import { I18nProvider } from "@/components/i18n/I18nProvider";
@@ -11,7 +11,7 @@ import {
   SITE_LOCALE,
   SITE_NAME,
   SITE_URL,
-  SOCIAL_IMAGE,
+  socialImage,
 } from "@/lib/site-config";
 
 import "lenis/dist/lenis.css";
@@ -49,20 +49,13 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     title: "Bali First Timer | Your First Bali Trip, Planned Properly",
     description: SITE_DESCRIPTION,
-    images: [
-      {
-        url: SOCIAL_IMAGE,
-        width: 1024,
-        height: 576,
-        alt: "Travellers at a sacred water temple in Bali",
-      },
-    ],
+    images: [socialImage()],
   },
   twitter: {
     card: "summary_large_image",
     title: "Bali First Timer | Your First Bali Trip, Planned Properly",
     description: SITE_DESCRIPTION,
-    images: [SOCIAL_IMAGE],
+    images: [socialImage()],
   },
   robots: {
     index: true,
@@ -84,12 +77,21 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png?v=2", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png?v=2", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-48x48.png?v=2", sizes: "48x48", type: "image/png" },
+      { url: "/favicon.svg?v=2", sizes: "any", type: "image/svg+xml" },
     ],
-    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    shortcut: "/favicon.ico?v=2",
+    apple: [{ url: "/apple-touch-icon.png?v=2", sizes: "180x180", type: "image/png" }],
   },
+  appleWebApp: { capable: true, title: SITE_NAME, statusBarStyle: "black-translucent" },
   manifest: absoluteUrl("/manifest.webmanifest"),
+};
+
+export const viewport: Viewport = {
+  themeColor: "#052B40",
+  colorScheme: "light",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
