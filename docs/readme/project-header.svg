@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="240" viewBox="0 0 1280 240" role="img" aria-labelledby="title description">
+  <title id="title">Bali First Timer — a project by Aras Örs</title>
+  <desc id="description">A multilingual travel website with thoughtful motion, personal trip planning and a local perspective on Bali.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1280" y2="240" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#052B40"/>
+      <stop offset="1" stop-color="#071B24"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1280" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFC825"/>
+      <stop offset="1" stop-color="#FFB900"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="1280" height="240" rx="20"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1280" height="240" fill="url(#background)"/>
+    <rect width="1280" height="5" fill="url(#gold)"/>
+    <circle cx="1194" cy="290" r="214" fill="none" stroke="#73E6EE" stroke-opacity="0.08"/>
+    <circle cx="1194" cy="290" r="164" fill="none" stroke="#73E6EE" stroke-opacity="0.08"/>
+    <path d="M0 218C230 182 438 244 668 211C887 180 1087 225 1280 193V240H0Z" fill="#09B8C8" fill-opacity="0.06"/>
+    <path d="M910 53V185" stroke="#FFFFFF" stroke-opacity="0.14"/>
+    <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif">
+      <text x="56" y="58" fill="#FFC825" font-size="12" font-weight="600" letter-spacing="3.2">WEB DEVELOPMENT · TRAVEL &amp; TOURISM</text>
+      <text x="52" y="130" fill="#FFFFFF" font-size="60" font-weight="750" letter-spacing="-2.8">Bali First Timer</text>
+      <text x="56" y="175" fill="#B9D5DE" font-size="19" letter-spacing="-0.2">Local insight. Personal pace. A better first trip.</text>
+      <text x="960" y="84" fill="#B9D5DE" font-size="10" font-weight="600" letter-spacing="2.2">BUILT BY</text>
+      <text x="957" y="128" fill="#FFC825" font-size="35" font-weight="700" letter-spacing="-1.2">Aras Örs</text>
+      <text x="960" y="160" fill="#B9D5DE" font-size="15">github.com/arasors</text>
+    </g>
+  </g>
+</svg>
